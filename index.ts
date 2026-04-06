@@ -18,7 +18,7 @@ fetchProductCatalog()
     for (const product of catalog) {
         console.log(`Product Number: ${product.id}  Name: ${product.name}  Price: ${product.price}`);
 
-        // I wanted reviews to print after each product but looks like that's not going to happen.
+        // I wanted reviews to print after each product but looks like that's not going to happen.git 
         collectPromises.push(fetchProductReviews(product.id));
     }
 
