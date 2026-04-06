@@ -3,6 +3,7 @@ console.log("index.ts is running");
 
 import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from './apiSimulator';
 
+// Testing. My stuff isn't working right.
 console.log("index.ts is running");
 console.log(fetchProductCatalog);
 console.log(fetchProductReviews);
@@ -17,6 +18,7 @@ fetchProductCatalog()
     for (const product of catalog) {
         console.log(`Product Number: ${product.id}  Name: ${product.name}  Price: ${product.price}`);
 
+        // I wanted reviews to print after each product but looks like that's not going to happen.
         collectPromises.push(fetchProductReviews(product.id));
     }
 
